@@ -12,25 +12,21 @@
  * Columna IZQ fila baja  = CTRL
  */
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/led/led.h>
-#include <dt-bindings/zmk/backlight.h>
-#include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/reset.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/rgb.h>
 
-&led_strip {
-    chain-length = <27>;
-};
+&led_strip { chain-length = <27>; };
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
-/* ════════════════════════════════════════════════════════════════════════
+        /* ════════════════════════════════════════════════════════════════════════
  * LAYER 0 — BASE  (hold MO1 thumb-izq = NUM | hold MO2 thumb-der = SYM)
  *
  * ╭──────┬───┬───┬───┬───┬───╮     ╭───┬───┬───┬───┬───┬──────╮
@@ -43,6 +39,7 @@
  *               │GUI│MO1│SPC│     │ENT│MO2│SFT│
  *               ╰───┴───┴───╯     ╰───┴───┴───╯
  * ════════════════════════════════════════════════════════════════════════ */
+
         default_layer {
             display-name = "BAS";
             bindings = <
@@ -53,7 +50,7 @@
             >;
         };
 
-/* ════════════════════════════════════════════════════════════════════════
+        /* ════════════════════════════════════════════════════════════════════════
  * LAYER 1 — NUM / BT / RGB
  *
  * IZQ: Fila alta = Controles RGB
@@ -72,17 +69,18 @@
  *                             │  ___   │  ___   │  ___   │     │  0  │  .  │ ___ │
  *                             ╰────────┴────────┴────────╯     ╰─────┴─────┴─────╯
  * ════════════════════════════════════════════════════════════════════════ */
+
         num_layer {
             display-name = "NUM";
             bindings = <
-&rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_EFF    &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_N0    &kp KP_DOT       &kp BSPC
-&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_MINUS &kp KP_ASTERISK  &kp KP_SLASH
-&out OUT_TOG     &trans           &trans           &trans           &trans           &trans             &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_PLUS  &kp KP_ENTER     &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_EFF    &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_N0     &kp KP_DOT       &kp BSPC
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH
+&out OUT_TOG     &trans           &trans           &trans           &trans           &trans             &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_PLUS   &kp KP_ENTER     &trans
                                                    &trans           &trans           &trans             &kp KP_N0  &kp KP_DOT  &trans
             >;
         };
 
-/* ════════════════════════════════════════════════════════════════════════
+        /* ════════════════════════════════════════════════════════════════════════
  * LAYER 2 — SYM  (Símbolos para programación)
  *
  * ╭──────┬───┬───┬───┬───┬───╮     ╭───┬───┬───┬───┬───┬──────╮
@@ -96,24 +94,15 @@
  *               ╰───┴───┴───╯     ╰───┴───┴───╯
  * ULK = studio_unlock (desbloquea edición en ZMK Studio)
  * ════════════════════════════════════════════════════════════════════════ */
+
         sym_layer {
             display-name = "SYM";
             bindings = <
-&kp GRAVE  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT       &kp CARET  &kp AMPS  &kp STAR   &kp LPAR   &kp RPAR  &kp BSPC
-&kp TILDE  &kp UNDER  &kp MINUS  &kp EQUAL  &kp PLUS   &kp PIPE        &kp LBRC   &kp RBRC  &kp LBKT   &kp RBKT   &kp BSLH  &kp GRAVE
-&trans     &kp LT     &kp GT     &kp SEMI   &kp COLON  &kp FSLH        &kp QMARK  &kp DQT   &kp SQT    &kp COMMA  &kp DOT   &kp ESC
-                                 &kp LGUI   &studio_unlock  &kp SPACE   &kp RET    &studio_unlock  &kp RALT
+&kp GRAVE  &kp EXCL   &kp AT     &kp HASH   &kp DLLR        &kp PRCNT    &kp CARET  &kp AMPS        &kp STAR  &kp LPAR   &kp RPAR  &kp BSPC
+&kp TILDE  &kp UNDER  &kp MINUS  &kp EQUAL  &kp PLUS        &kp PIPE     &kp LBRC   &kp RBRC        &kp LBKT  &kp RBKT   &kp BSLH  &kp GRAVE
+&trans     &kp LT     &kp GT     &kp SEMI   &kp COLON       &kp FSLH     &kp QMARK  &kp DQT         &kp SQT   &kp COMMA  &kp DOT   &kp ESC
+                                 &kp LGUI   &studio_unlock  &kp SPACE    &kp RET    &studio_unlock  &kp RALT
             >;
-        };
-
-        extra_1 {
-            status = "reserved";
-        };
-        extra_2 {
-            status = "reserved";
-        };
-        extra_3 {
-            status = "reserved";
         };
     };
 };
