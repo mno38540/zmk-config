@@ -28,7 +28,7 @@ layers:
   - KP ASTERISK
   - KP SLASH
   - OUT TOG
-  - {t: ▽, type: trans}
+  - EP ON
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
