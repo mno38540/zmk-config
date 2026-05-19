@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - ESCAPE
+  - ↹
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - $$mdi:backspace-outline$$
-  - CAPSLOCK
+  - {t: CAPSLOCK, h: '$$mdi:apple-keyboard-control$$'}
   - {t: A, h: LEFT CONTROL}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT WIN}
@@ -25,7 +25,7 @@ layers:
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: RIGHT CONTROL}
   - ''''
-  - \
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -37,10 +37,10 @@ layers:
   - .
   - /
   - ENTER
-  - Raise
+  - LEFT ALT
   - Lower
-  - LEFT SHIFT
   - ␣
+  - ENTER
   - {t: ↹, h: Raise}
   - {t: '-', h: Sft+-}
   Lower:
@@ -123,11 +123,11 @@ layers:
   - BT 4
   - BT 5
   - BT CLR
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PLAY PAUSE
-  - {t: ▽, type: trans}
+  - {type: held}
   - MUTE
   '3':
   - {t: ▽, type: trans}
