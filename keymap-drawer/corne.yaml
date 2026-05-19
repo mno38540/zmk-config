@@ -35,14 +35,14 @@ layers:
   - M
   - ','
   - .
-  - /
-  - ENTER
+  - Caps Lock
+  - CAPSLOCK
   - LEFT ALT
   - Lower
   - ␣
   - ENTER
   - Raise
-  - {t: '-', h: Sft+-}
+  - Esc
   Lower:
   - KP MULTIPLY
   - '-'
