@@ -41,7 +41,7 @@ layers:
   - Lower
   - ␣
   - ENTER
-  - {t: ↹, h: Raise}
+  - Raise
   - {t: '-', h: Sft+-}
   Lower:
   - KP MULTIPLY
