@@ -1,90 +1,174 @@
 layout: {zmk_keyboard: corne}
 layers:
-  BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', Caps Lock, A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-control$$', Z, X, C, V,
-    B, N, M, ',', ., /, Esc, SYM, NUM, ␣, ⏎, SYM, '$$mdi:apple-keyboard-shift$$']
-  NUM:
-  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
-  - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
-  - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
-  - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
-  - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
-  - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP 0
-  - KP DOT
+  Base:
+  - ESCAPE
+  - Q
+  - W
+  - E
+  - {t: R, h: Ctl+R}
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
   - $$mdi:backspace-outline$$
-  - BT CLR
+  - CAPSLOCK
+  - {t: A, h: LEFT CONTROL}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LEFT WIN}
+  - F
+  - G
+  - H
+  - J
+  - {t: K, h: LEFT GUI}
+  - {t: L, h: RIGHT ALT}
+  - {t: ;, h: RIGHT CONTROL}
+  - ''''
+  - \
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ENTER
+  - Raise
+  - Lower
+  - LEFT SHIFT
+  - ␣
+  - {t: ↹, h: Raise}
+  - {t: '-', h: Sft+-}
+  Lower:
+  - KP MULTIPLY
+  - '-'
+  - {t: '7', h: AMPERSAND}
+  - {t: '8', h: '*'}
+  - {t: '9', h: (}
+  - +
+  - Sft+[
+  - Sft+]
+  - (
+  - )
+  - '['
+  - ']'
+  - /
+  - BACKSPACE
+  - {t: '4', h: $}
+  - {t: '5', h: '%'}
+  - {t: '6', h: ^}
+  - ENTER
+  - Sft+Ctl+Gui+LEFT ALT
+  - ←
+  - ↓
+  - UP ARROW
+  - RIGHT ARROW
+  - $
+  - \
+  - '0'
+  - {t: '1', h: '!'}
+  - {t: '2', h: '@'}
+  - {t: '3', h: '#'}
+  - .
+  - Alt+Sft+-
+  - Sft+Ctl+↹
+  - PAGE DOWN
+  - Page Up
+  - Tab Right
+  - '~'
+  - '~'
+  - {t: ␣, type: held}
+  - LEFT SHIFT
+  - ␣
+  - Gui+Sft+←
+  - Sft+Gui+→
+  Raise:
+  - Esc
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - BT PRV
+  - '&mmv MOVE_Y(500)'
+  - {t: ↹, h: Ctl+R}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ⏮️
+  - VOLUME DOWN
+  - Sft+VOL UP
+  - ⏭️
+  - '`'
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BT 1
   - BT 2
   - BT 3
   - BT 4
   - BT 5
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP MINUS
-  - KP ASTERISK
-  - KP SLASH
-  - OUT TOG
-  - EP ON
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP PLUS
-  - KP ENTER
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR
   - {type: held}
   - {t: ▽, type: trans}
-  - KP 0
-  - KP DOT
   - {t: ▽, type: trans}
-  SYM:
-  - '`'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - AMPS
-  - '*'
-  - (
-  - )
-  - $$mdi:backspace-outline$$
-  - '~'
-  - _
-  - '-'
-  - '='
-  - +
-  - '|'
-  - '{'
-  - '}'
-  - '['
-  - ']'
-  - \
-  - '`'
-  - BT CLR ALL
-  - <
-  - '>'
-  - ;
-  - ':'
-  - /
-  - '?'
-  - '"'
-  - ''''
-  - ','
-  - .
-  - Esc
-  - {t: '$$mdi:apple-keyboard-command$$', type: held}
-  - '&studio_unlock'
-  - ␣
-  - ⏎
-  - '&studio_unlock'
-  - $$mdi:apple-keyboard-option$$
+  - PLAY PAUSE
+  - {t: ▽, type: trans}
+  - MUTE
+  '3':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
