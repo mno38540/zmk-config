@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', Caps Lock, A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-control$$', Z, X, C, V,
-    B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', NUM, ␣, ⏎, SYM, '$$mdi:apple-keyboard-shift$$']
+    B, N, M, ',', ., /, Esc, SYM, NUM, ␣, ⏎, SYM, '$$mdi:apple-keyboard-shift$$']
   NUM:
   - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
   - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
@@ -70,7 +70,7 @@ layers:
   - ']'
   - \
   - '`'
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - <
   - '>'
   - ;
@@ -82,9 +82,9 @@ layers:
   - ','
   - .
   - Esc
-  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:apple-keyboard-command$$', type: held}
   - '&studio_unlock'
   - ␣
   - ⏎
-  - {t: '&studio_unlock', type: held}
+  - '&studio_unlock'
   - $$mdi:apple-keyboard-option$$
