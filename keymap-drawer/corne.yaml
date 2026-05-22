@@ -13,72 +13,72 @@ layers:
   - O
   - P
   - $$mdi:backspace-outline$$
-  - {t: CAPSLOCK, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: A, h: LEFT CONTROL}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LEFT WIN}
+  - CAPSLOCK
+  - A
+  - S
+  - D
   - F
   - G
   - H
   - J
-  - {t: K, h: LEFT GUI}
-  - {t: L, h: RIGHT ALT}
+  - K
+  - L
   - {t: ;, h: RIGHT CONTROL}
   - ''''
   - LEFT SHIFT
-  - Z
-  - X
-  - C
-  - V
+  - {t: Z, h: Ctl+Z}
+  - {t: X, h: Ctl+X}
+  - {t: C, h: Ctl+C}
+  - {t: V, h: Ctl+V}
   - B
   - N
   - M
   - ','
   - .
-  - Caps Lock
-  - CAPSLOCK
-  - LEFT ALT
+  - LEFT ARROW
+  - →
+  - $$mdi:apple-keyboard-control$$
   - Lower
   - ␣
   - ENTER
   - Raise
-  - Esc
+  - LEFT ALT
   Lower:
-  - KP MULTIPLY
-  - '-'
+  - Esc
+  - F5
+  - F5
+  - UP ARROW
+  - ''''
+  - '"'
+  - '*'
   - {t: '7', h: AMPERSAND}
   - {t: '8', h: '*'}
-  - {t: '9', h: (}
-  - +
-  - Sft+[
-  - Sft+]
-  - (
-  - )
+  - {t: '9', h: )}
   - '['
   - ']'
   - /
   - BACKSPACE
+  - ←
+  - DOWN ARROW
+  - →
+  - ENTER
+  - PAGE UP
   - {t: '4', h: $}
   - {t: '5', h: '%'}
   - {t: '6', h: ^}
-  - ENTER
-  - Sft+Ctl+Gui+LEFT ALT
-  - ←
-  - ↓
-  - UP ARROW
-  - RIGHT ARROW
-  - $
+  - (
+  - )
   - \
-  - '0'
+  - '>'
+  - {t: '1', h: '!'}
+  - '{'
+  - {t: '3', h: '#'}
+  - .
+  - PAGE DOWN
   - {t: '1', h: '!'}
   - {t: '2', h: '@'}
   - {t: '3', h: '#'}
-  - .
-  - Alt+Sft+-
-  - Sft+Ctl+↹
-  - PAGE DOWN
-  - Page Up
-  - Tab Right
+  - {t: '0', h: ESCAPE}
   - '~'
   - '~'
   - {t: ␣, type: held}
@@ -99,19 +99,19 @@ layers:
   - F9
   - F10
   - F11
-  - BT PRV
+  - ↹
   - '&mmv MOVE_Y(500)'
-  - {t: ↹, h: Ctl+R}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ⏮️
   - VOLUME DOWN
-  - Sft+VOL UP
+  - VOL UP
   - ⏭️
   - '`'
-  - BT CLR ALL
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
